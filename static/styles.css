@@ -1,0 +1,388 @@
+/* Import Google Fonts */
+@import url("https://fonts.googleapis.com/css?family=Merriweather:300,700,300italic,700italic|Source+Sans+Pro:900");
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp, small,
+strike, strong, sub, sup, tt, var, b, u, i, center,
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, figure,
+figcaption, footer, header, hgroup, menu, nav, output,
+ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+    font-family: "Merriweather", Georgia, serif;
+    background-color: #50E3C2; 
+    background-image: 
+        radial-gradient(at 47% 33%, hsl(162.00, 77%, 40%) 0, transparent 59%), 
+        radial-gradient(at 82% 65%, hsl(198.00, 100%, 50%) 0, transparent 55%);
+    transition: 700ms;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+th, td {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    padding: 8px;
+    border: 1px solid #c2c2c2;
+    border-inline-color: transparent;
+
+}
+
+th {
+    color: #fff;    
+    background-color: #66a3ffb8;
+    border-color:transparent;
+    width: calc(100% / 3);
+}
+
+h1 {
+    font-family: "Source Sans Pro", Helvetica, sans-serif;
+    font-size: 2rem;
+    font-weight: 900;
+    letter-spacing: 0.075em;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    color: #212931;
+}
+
+h2 {
+    font-family: "Source Sans Pro", Helvetica, sans-serif;
+    letter-spacing: 0.075em;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+    color: #212931;
+}
+
+h3 {
+    font-family: "Source Sans Pro", Helvetica, sans-serif;
+    letter-spacing: 0.01em;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    text-align: center;
+    text-transform: none;
+    margin-bottom: 0.1rem;
+    color: #212931;
+}
+
+form {
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    align-items: center;
+}
+
+label {
+    font-family: "Source Sans Pro", Helvetica, sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    margin-bottom: 0rem;
+    flex-basis: 10px;
+    flex-shrink: 0;
+}
+
+input[type="text"],
+input[type="number"],
+textarea {
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 0;
+    background: #ffffffa8;
+    flex: 1;
+}
+
+input[type="submit"], .button-58 {
+    display: inline;
+    padding: 0.5rem 0.5rem;
+    background-color: #18bfef;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-family: "Source Sans Pro", Helvetica, sans-serif;
+    transition: background-color 0.2s;
+    text-decoration: none;
+}
+
+input[type="submit"]:hover, .button-58:hover {
+    background-color: #155a8a;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0rem auto;
+    margin-bottom: 30rem;
+    padding: 1rem;
+    background: transparent;
+    border: transparent;
+    border-radius: 4px;
+}
+
+.container2 {                /*Container For Edit Page*/
+    max-width: 800px;
+    margin: 0rem auto;
+    margin-bottom: 30rem;
+    padding: 10rem;
+    background: transparent;
+/*    border: 2px solid #eee;*/
+    border-radius: 4px;
+}
+
+.card {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+    border: 2px solid #eee;
+    border-radius: 12px;
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(255, 255, 255, 0.75);
+    border: 1px solid rgba(209, 213, 219, 0.3);
+}
+
+.entry {
+    padding: 1rem;
+    border-bottom: 1px solid #ddd;
+}
+
+.entry:last-child {
+    border-bottom: none;
+}
+
+.entry h2 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.entry .actions {
+    margin-top: 1rem;
+    display: inline;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.button-58 {
+    align-items: center;
+    background-color: #ffcc00;
+    border: none;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-flex;
+    fill: #000;
+    font-family: "Source Sans Pro", Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+    height: 32px;
+    justify-content: center;
+    letter-spacing: -.8px;
+    line-height: 24px;
+    min-width: 140px;
+    outline: 0;
+    padding: 0 17px;
+    text-align: center;
+    text-decoration: none;
+    transition: all .3s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.button-58:focus {
+    color: #171e29;
+}
+
+.button-58.edit {
+    background-color: #ffcc00;
+}
+
+.button-58.edit:hover {
+    background-color: #cc9900;
+}
+
+.button-58.delete {
+    background-color: #ff6666;
+}
+
+.button-58.delete:hover {
+    background-color: #cc0000;
+}
+
+.button-58:active {
+    background-color: #3385ff;
+    border-color: #3385ff;
+    fill: #06f;
+}
+
+@media (min-width: 768px) {
+    .button-58 {
+        min-width: 80px;
+    }
+}
+
+.dark-mode-toggle {
+/*    margin-top: 0.5rem;
+    margin-right: 0.5rem;*/
+    display: flex;
+    justify-content: flex-end;
+}
+
+/*Darkmode switch*/
+
+.switch {
+ --button-width: 3.5em;
+ --button-height: 2em;
+ --toggle-diameter: 1.6em;
+ --button-toggle-offset: calc((var(--button-height) - var(--toggle-diameter)) / 2);
+ --toggle-shadow-offset: 10px;
+ --toggle-wider: 3em;
+ --color-grey: #a4a4a4;
+ --color-green: #6bc9a7;
+    margin-top: 0.5rem;
+    margin-right: 0.75rem;
+}
+
+.slider {
+ display: inline-block;
+ width: var(--button-width);
+ height: var(--button-height);
+ background-color: var(--color-grey);
+ border-radius: calc(var(--button-height) / 2);
+ position: relative;
+ transition: 0.3s all ease-in-out;
+}
+
+.slider::after {
+ content: "";
+ display: inline-block;
+ width: var(--toggle-diameter);
+ height: var(--toggle-diameter);
+ background-color: #fff;
+ border-radius: calc(var(--toggle-diameter) / 2);
+ position: absolute;
+ top: var(--button-toggle-offset);
+ transform: translateX(var(--button-toggle-offset));
+ box-shadow: var(--toggle-shadow-offset) 0 calc(var(--toggle-shadow-offset) * 4) rgba(0, 0, 0, 0.1);
+ transition: 0.3s all ease-in-out;
+}
+
+.switch input[type="checkbox"]:checked + .slider {
+ background-color: var(--color-green);
+}
+
+.switch input[type="checkbox"]:checked + .slider::after {
+ transform: translateX(calc(var(--button-width) - var(--toggle-diameter) - var(--button-toggle-offset)));
+ box-shadow: calc(var(--toggle-shadow-offset) * -1) 0 calc(var(--toggle-shadow-offset) * 4) rgba(0, 0, 0, 0.1);
+}
+
+.switch input[type="checkbox"] {
+ display: none;
+}
+
+.switch input[type="checkbox"]:active + .slider::after {
+ width: var(--toggle-wider);
+}
+
+.switch input[type="checkbox"]:checked:active + .slider::after {
+ transform: translateX(calc(var(--button-width) - var(--toggle-wider) - var(--button-toggle-offset)));
+}
+
+
+
+/* ====================================================================Dark Mode Styles================================================================ */
+
+
+
+body.dark-mode{
+    background-color: #111927;
+    background-image: 
+        radial-gradient(at 47% 33%, hsl(162.00, 77%, 40%) 0, transparent 59%), 
+        radial-gradient(at 82% 65%, hsl(218.00, 39%, 11%) 0, transparent 55%);
+}
+
+/* Dark Glassmorphism card effect */
+.dark-mode .card {
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(17, 25, 40, 0.75);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+body.dark-mode h1, body.dark-mode h2, body.dark-mode h3, body.dark-mode label{
+    color: #f4f4f4;
+}
+
+body.dark-mode input[type="text"], body.dark-mode input[type="number"]{
+    color: #fff;
+    background: #264c51; 
+
+}
+
+body.dark-mode th, body.dark-mode td {
+    color: #f4f4f4;
+    border-color: #444;
+    border-inline-color: transparent;
+}
+
+/*body.dark-mode .button-58 {
+    background-color: #ffcc00;
+}
+
+body.dark-mode .button-58:hover {
+    background-color: #cc9900;
+}
+
+body.dark-mode .button-58.delete {
+    background-color: #ff6666;
+}
+
+body.dark-mode .button-58.delete:hover {
+    background-color: #cc0000;
+}
+
+body.dark-mode .dark-mode-toggle button {
+    background-color: #f4f4f4;
+    color: #212931;
+}
+*/
